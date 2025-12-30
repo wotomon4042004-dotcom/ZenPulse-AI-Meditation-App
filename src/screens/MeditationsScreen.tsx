@@ -567,11 +567,11 @@ const styles = StyleSheet.create({
   meditationCard: {
     width: CARD_WIDTH,
     backgroundColor: colors.cardBackground,
-    borderRadius: isSmallDevice ? 16 : 20, // Мягкие скругления
+    borderRadius: isSmallDevice ? 16 : 20,
     overflow: 'hidden',
-    borderWidth: 1,
+    borderWidth: 1.5,
     borderColor: colors.border,
-    ...shadows.small,
+    ...shadows.medium,
   },
   cardImageContainer: {
     position: 'relative',

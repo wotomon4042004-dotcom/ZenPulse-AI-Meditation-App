@@ -1,105 +1,132 @@
 // Цветовая палитра для медитационного приложения
-// ЯРКИЙ, ДОРОГОЙ дизайн в стиле медитаций (по ТЗ)
+// ЯРКИЕ ВЫСОКОКОНТРАСТНЫЕ цвета (тренд 2025)
+// Схема: яркие градиенты + неоновые акценты
 
 export const colors = {
-  // Основная палитра - ЯРКИЕ насыщенные тона
-  primary: '#7C3AED', // Насыщенный фиолетовый (премиум)
+  // Основная палитра - НЕОНОВЫЕ насыщенные тона
+  primary: '#8B5CF6', // Яркий неоновый фиолетовый
   primaryLight: '#A78BFA',
-  primaryDark: '#5B21B6',
+  primaryDark: '#7C3AED',
   
-  // Вторичные цвета - яркие акценты
-  secondary: '#EC4899', // Яркий розовый/маджента
-  secondaryLight: '#F472B6',
+  // Вторичные цвета - ВЫСОКОКОНТРАСТНЫЕ
+  secondary: '#F472B6', // Яркий неоновый розовый
+  secondaryLight: '#FB7185',
   
-  // Акцентные цвета (яркие, заметные)
-  accent: '#FBBF24', // Яркий золотой (премиум)
-  accentLight: '#FCD34D',
-  success: '#10B981', // Яркий изумрудный
-  warning: '#F59E0B', // Яркий оранжевый
-  teal: '#06B6D4', // Яркий бирюзовый
+  // Акцентные цвета - НЕОНОВЫЕ (бирюзовый, зелёный, оранжевый)
+  accent: '#FACC15', // Яркий жёлтый/золотой
+  accentLight: '#FDE047',
+  success: '#34D399', // Неоновый зелёный
+  warning: '#FB923C', // Неоновый оранжевый
+  teal: '#22D3EE', // Яркий неоновый бирюзовый (cyan)
+  coral: '#FF6B6B', // Яркий коралловый
+  lime: '#A3E635', // Неоновый лайм
   
   // Текст
   textPrimary: '#FFFFFF',
-  textSecondary: 'rgba(255, 255, 255, 0.7)',
-  textTertiary: 'rgba(255, 255, 255, 0.4)',
-  textMuted: 'rgba(255, 255, 255, 0.2)',
+  textSecondary: 'rgba(255, 255, 255, 0.75)',
+  textTertiary: 'rgba(255, 255, 255, 0.5)',
+  textMuted: 'rgba(255, 255, 255, 0.3)',
   
-  // Фоны - единый тёмный стиль (без полос!)
-  background: '#1A1A2E', // Глубокий фиолетово-синий
-  backgroundElevated: '#1A1A2E',
-  backgroundSecondary: '#16213E',
-  backgroundTertiary: '#0F3460',
-  cardBackground: 'rgba(255, 255, 255, 0.08)',
-  cardBackgroundLight: 'rgba(255, 255, 255, 0.12)',
-  cardBackgroundHover: 'rgba(255, 255, 255, 0.16)',
+  // Фоны - глубокий тёмный с фиолетовым оттенком
+  background: '#0F0A1F', // Глубокий космический тёмный
+  backgroundElevated: '#1A1333',
+  backgroundSecondary: '#15102B',
+  backgroundTertiary: '#231A42',
+  cardBackground: 'rgba(139, 92, 246, 0.12)',
+  cardBackgroundLight: 'rgba(139, 92, 246, 0.18)',
+  cardBackgroundHover: 'rgba(139, 92, 246, 0.25)',
   
-  // Glass effect
-  glass: 'rgba(255, 255, 255, 0.1)',
-  glassBorder: 'rgba(255, 255, 255, 0.15)',
+  // Glass effect - яркий
+  glass: 'rgba(139, 92, 246, 0.15)',
+  glassBorder: 'rgba(139, 92, 246, 0.3)',
   
-  // Границы
-  border: 'rgba(255, 255, 255, 0.1)',
-  borderLight: 'rgba(255, 255, 255, 0.2)',
-  separator: 'rgba(255, 255, 255, 0.1)',
+  // Границы - с фиолетовым оттенком
+  border: 'rgba(139, 92, 246, 0.2)',
+  borderLight: 'rgba(139, 92, 246, 0.35)',
+  separator: 'rgba(139, 92, 246, 0.15)',
   
   // Состояния
-  locked: 'rgba(255, 255, 255, 0.2)',
-  overlay: 'rgba(0, 0, 0, 0.6)',
-  overlayLight: 'rgba(0, 0, 0, 0.4)',
+  locked: 'rgba(255, 255, 255, 0.25)',
+  overlay: 'rgba(15, 10, 31, 0.85)',
+  overlayLight: 'rgba(15, 10, 31, 0.6)',
 };
 
 export const gradients = {
-  // Основной фон - ЕДИНЫЙ градиент (без полос!)
-  main: ['#1A1A2E', '#16213E', '#1A1A2E'] as const,
+  // Основной фон - глубокий космический
+  main: ['#0F0A1F', '#1A1333', '#0F0A1F'] as const,
   
-  // Премиум градиенты - ЯРКИЕ
-  premium: ['#7C3AED', '#EC4899'] as const,
-  premiumSubtle: ['rgba(124, 58, 237, 0.3)', 'rgba(236, 72, 153, 0.15)'] as const,
+  // Премиум градиенты - ЯРКИЕ НЕОНОВЫЕ
+  premium: ['#8B5CF6', '#EC4899', '#F472B6'] as const,
+  premiumSubtle: ['rgba(139, 92, 246, 0.4)', 'rgba(236, 72, 153, 0.2)'] as const,
   
-  // Золотой для акцентов (премиум стиль)
-  gold: ['#FBBF24', '#F59E0B'] as const,
+  // Закатные яркие градиенты (тренд!)
+  sunset: ['#F472B6', '#FB923C', '#FACC15'] as const,
   
-  // Для медитаций
-  calm: ['#7C3AED', '#06B6D4'] as const,
-  calmSubtle: ['rgba(124, 58, 237, 0.2)', 'rgba(6, 182, 212, 0.1)'] as const,
+  // Океанские яркие градиенты
+  ocean: ['#22D3EE', '#8B5CF6'] as const,
   
-  // Карточки
-  card: ['rgba(124, 58, 237, 0.15)', 'rgba(124, 58, 237, 0.05)'] as const,
-  cardHover: ['rgba(124, 58, 237, 0.25)', 'rgba(124, 58, 237, 0.1)'] as const,
+  // Золотой для акцентов (премиум)
+  gold: ['#FACC15', '#FB923C'] as const,
   
-  // Кнопка CTA - яркий градиент
-  cta: ['#7C3AED', '#EC4899'] as const,
-  ctaPressed: ['#6D28D9', '#DB2777'] as const,
+  // Для медитаций - успокаивающие но яркие
+  calm: ['#8B5CF6', '#22D3EE'] as const,
+  calmSubtle: ['rgba(139, 92, 246, 0.3)', 'rgba(34, 211, 238, 0.15)'] as const,
   
-  // AI секция
-  ai: ['rgba(236, 72, 153, 0.2)', 'rgba(124, 58, 237, 0.1)'] as const,
+  // Карточки - с неоновым свечением
+  card: ['rgba(139, 92, 246, 0.2)', 'rgba(236, 72, 153, 0.1)'] as const,
+  cardHover: ['rgba(139, 92, 246, 0.35)', 'rgba(236, 72, 153, 0.2)'] as const,
+  
+  // Кнопка CTA - яркий неоновый градиент
+  cta: ['#8B5CF6', '#EC4899'] as const,
+  ctaPressed: ['#7C3AED', '#DB2777'] as const,
+  
+  // AI секция - яркий контраст
+  ai: ['rgba(34, 211, 238, 0.25)', 'rgba(139, 92, 246, 0.15)'] as const,
+  
+  // Дополнительные эффектные градиенты
+  neon: ['#22D3EE', '#8B5CF6', '#EC4899'] as const,
+  fire: ['#FB923C', '#F472B6', '#8B5CF6'] as const,
 };
 
-// Тени - мягкие, не резкие
+// Тени - мягкие ЦВЕТНЫЕ (тренд 2025)
 export const shadows = {
   small: {
-    shadowColor: '#000',
+    shadowColor: '#8B5CF6',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
+    shadowOpacity: 0.15,
     shadowRadius: 4,
     elevation: 2,
   },
   medium: {
-    shadowColor: '#000',
+    shadowColor: '#8B5CF6',
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.15,
-    shadowRadius: 8,
+    shadowOpacity: 0.25,
+    shadowRadius: 12,
     elevation: 4,
   },
   large: {
-    shadowColor: '#000',
+    shadowColor: '#8B5CF6',
     shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.2,
-    shadowRadius: 16,
+    shadowOpacity: 0.35,
+    shadowRadius: 20,
     elevation: 8,
   },
   glow: {
-    shadowColor: '#6B7FD7',
+    shadowColor: '#8B5CF6',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.5,
+    shadowRadius: 25,
+    elevation: 10,
+  },
+  glowPink: {
+    shadowColor: '#EC4899',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.4,
+    shadowRadius: 20,
+    elevation: 10,
+  },
+  glowCyan: {
+    shadowColor: '#22D3EE',
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.4,
     shadowRadius: 20,
