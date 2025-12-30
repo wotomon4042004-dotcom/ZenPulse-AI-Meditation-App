@@ -26,11 +26,11 @@ export const colors = {
   textTertiary: 'rgba(255, 255, 255, 0.45)',
   textMuted: 'rgba(255, 255, 255, 0.25)',
   
-  // Фоны - чистый тёмный Apple style
-  background: '#000000', // Pure black (OLED)
-  backgroundElevated: '#1C1C1E', // Apple elevated dark
-  backgroundSecondary: '#2C2C2E', // Apple secondary dark
-  backgroundTertiary: '#3A3A3C', // Apple tertiary dark
+  // Фоны - серый Apple style
+  background: '#1C1C1E', // Apple dark gray
+  backgroundElevated: '#2C2C2E', // Apple elevated
+  backgroundSecondary: '#3A3A3C', // Apple secondary
+  backgroundTertiary: '#48484A', // Apple tertiary
   cardBackground: 'rgba(255, 255, 255, 0.08)',
   cardBackgroundLight: 'rgba(255, 255, 255, 0.12)',
   cardBackgroundHover: 'rgba(255, 255, 255, 0.18)',
@@ -51,8 +51,8 @@ export const colors = {
 };
 
 export const gradients = {
-  // Основной фон - чистый чёрный
-  main: ['#000000', '#1C1C1E', '#000000'] as const,
+  // Основной фон - Apple серый
+  main: ['#1C1C1E', '#2C2C2E', '#1C1C1E'] as const,
   
   // Премиум градиенты - Apple style
   premium: ['#007AFF', '#5856D6'] as const, // Blue to Indigo

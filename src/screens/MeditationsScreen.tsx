@@ -74,10 +74,10 @@ const MeditationCard: React.FC<MeditationCardProps> = ({
       <View style={styles.cardImageContainer}>
         {imageError ? (
           <LinearGradient
-            colors={['#3B2667', '#BC78EC']}
+            colors={['#5856D6', '#007AFF']}
             style={styles.cardImagePlaceholder}
           >
-            <MaterialCommunityIcons name="meditation" size={40} color="rgba(255,255,255,0.5)" />
+            <MaterialCommunityIcons name="meditation" size={32} color="rgba(255,255,255,0.7)" />
           </LinearGradient>
         ) : (
           <Image
@@ -144,12 +144,12 @@ const MoodButton: React.FC<{
           colors={[`${config.color}40`, `${config.color}20`]}
           style={styles.moodButtonGradient}
         >
-          <Ionicons name={config.icon} size={28} color={config.color} />
+          <Ionicons name={config.icon} size={22} color={config.color} />
           <Text style={[styles.moodLabel, { color: config.color }]}>{config.label}</Text>
         </LinearGradient>
       ) : (
         <View style={styles.moodButtonInner}>
-          <Ionicons name={config.icon} size={28} color={colors.textSecondary} />
+          <Ionicons name={config.icon} size={22} color={colors.textSecondary} />
           <Text style={styles.moodLabel}>{config.label}</Text>
         </View>
       )}
@@ -217,10 +217,7 @@ export const MeditationsScreen: React.FC<{ navigation: any }> = ({ navigation })
         >
           {/* Header */}
           <View style={styles.header}>
-            <View>
-              <Text style={styles.greeting}>{getGreeting()}</Text>
-              <Text style={styles.headerTitle}>Найди свой дзен</Text>
-            </View>
+            <Text style={styles.headerTitle}>ZenPulse</Text>
             {!isSubscribed ? (
               <TouchableOpacity
                 style={styles.premiumButton}
@@ -241,7 +238,7 @@ export const MeditationsScreen: React.FC<{ navigation: any }> = ({ navigation })
                 <Ionicons name="checkmark-circle" size={16} color={colors.success} />
                 <Text style={styles.subscribedText}>Premium</Text>
               </View>
-            )}
+            }
           </View>
 
           {/* AI Настрой дня */}
@@ -364,20 +361,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: isSmallDevice ? 8 : 12,
-    marginBottom: isSmallDevice ? 20 : 28, // Больше воздуха
-  },
-  greeting: {
-    fontSize: isSmallDevice ? 14 : 15,
-    color: colors.textSecondary,
-    marginBottom: 4,
-    fontFamily: Platform.OS === 'ios' ? 'SF Pro Text' : 'System',
+    marginTop: isSmallDevice ? 4 : 8,
+    marginBottom: isSmallDevice ? 16 : 20,
   },
   headerTitle: {
-    fontSize: isSmallDevice ? 24 : isLargeDevice ? 30 : 28,
+    fontSize: isSmallDevice ? 22 : isLargeDevice ? 26 : 24,
     fontWeight: '700',
     color: colors.textPrimary,
-    letterSpacing: -0.5,
+    letterSpacing: -0.3,
     fontFamily: Platform.OS === 'ios' ? 'SF Pro Display' : 'System',
   },
   premiumButton: {
@@ -415,9 +406,9 @@ const styles = StyleSheet.create({
   },
   aiSection: {
     backgroundColor: colors.cardBackground,
-    borderRadius: 24,
-    padding: 20,
-    marginBottom: 28,
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 20,
     borderWidth: 1,
     borderColor: colors.border,
     overflow: 'hidden',
@@ -434,16 +425,16 @@ const styles = StyleSheet.create({
   aiHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 14,
   },
   aiIconContainer: {
-    marginRight: 14,
-    ...shadows.medium,
+    marginRight: 12,
+    ...shadows.small,
   },
   aiIconGradient: {
-    width: 48,
-    height: 48,
-    borderRadius: 14,
+    width: 40,
+    height: 40,
+    borderRadius: 12,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -451,61 +442,61 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   aiTitle: {
-    fontSize: 18,
-    fontWeight: '700',
+    fontSize: 16,
+    fontWeight: '600',
     color: colors.textPrimary,
     marginBottom: 2,
     fontFamily: Platform.OS === 'ios' ? 'SF Pro Display' : 'System',
   },
   aiSubtitle: {
-    fontSize: 14,
+    fontSize: 13,
     color: colors.textSecondary,
     fontFamily: Platform.OS === 'ios' ? 'SF Pro Text' : 'System',
   },
   moodContainer: {
     flexDirection: 'row',
-    gap: 10,
+    gap: 8,
   },
   moodButton: {
     flex: 1,
-    borderRadius: 16,
+    borderRadius: 12,
     overflow: 'hidden',
-    borderWidth: 2,
+    borderWidth: 1.5,
     borderColor: 'transparent',
   },
   moodButtonSelected: {
     borderColor: colors.primary,
   },
   moodButtonGradient: {
-    paddingVertical: 16,
+    paddingVertical: 12,
     alignItems: 'center',
-    gap: 8,
+    gap: 6,
   },
   moodButtonInner: {
-    paddingVertical: 16,
+    paddingVertical: 12,
     alignItems: 'center',
-    gap: 8,
+    gap: 6,
     backgroundColor: colors.cardBackgroundLight,
   },
   moodLabel: {
-    fontSize: 12,
+    fontSize: 11,
     color: colors.textSecondary,
     fontWeight: '600',
     fontFamily: Platform.OS === 'ios' ? 'SF Pro Text' : 'System',
   },
   aiResponseContainer: {
-    marginTop: 16,
+    marginTop: 12,
     alignItems: 'center',
   },
   loadingText: {
     color: colors.textSecondary,
-    marginTop: 10,
-    fontSize: 14,
+    marginTop: 8,
+    fontSize: 13,
     fontFamily: Platform.OS === 'ios' ? 'SF Pro Text' : 'System',
   },
   aiResponseGradient: {
-    borderRadius: 16,
-    padding: 16,
+    borderRadius: 12,
+    padding: 14,
     width: '100%',
   },
   aiResponseHeader: {
