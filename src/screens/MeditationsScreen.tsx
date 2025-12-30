@@ -238,7 +238,7 @@ export const MeditationsScreen: React.FC<{ navigation: any }> = ({ navigation })
                 <Ionicons name="checkmark-circle" size={16} color={colors.success} />
                 <Text style={styles.subscribedText}>Premium</Text>
               </View>
-            }
+            )}
           </View>
 
           {/* AI Настрой дня */}
