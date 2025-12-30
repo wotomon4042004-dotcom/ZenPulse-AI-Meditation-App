@@ -1,135 +1,134 @@
 // Цветовая палитра для медитационного приложения
-// ЯРКИЕ ВЫСОКОКОНТРАСТНЫЕ цвета (тренд 2025)
-// Схема: яркие градиенты + неоновые акценты
+// Apple-style: чистый, яркий, минималистичный
 
 export const colors = {
-  // Основная палитра - НЕОНОВЫЕ насыщенные тона
-  primary: '#8B5CF6', // Яркий неоновый фиолетовый
-  primaryLight: '#A78BFA',
-  primaryDark: '#7C3AED',
+  // Основная палитра - Apple system colors
+  primary: '#007AFF', // Apple Blue
+  primaryLight: '#5AC8FA', // Apple Light Blue
+  primaryDark: '#0051D5',
   
-  // Вторичные цвета - ВЫСОКОКОНТРАСТНЫЕ
-  secondary: '#F472B6', // Яркий неоновый розовый
-  secondaryLight: '#FB7185',
+  // Вторичные цвета - Apple palette
+  secondary: '#FF2D55', // Apple Pink
+  secondaryLight: '#FF6482',
   
-  // Акцентные цвета - НЕОНОВЫЕ (бирюзовый, зелёный, оранжевый)
-  accent: '#FACC15', // Яркий жёлтый/золотой
-  accentLight: '#FDE047',
-  success: '#34D399', // Неоновый зелёный
-  warning: '#FB923C', // Неоновый оранжевый
-  teal: '#22D3EE', // Яркий неоновый бирюзовый (cyan)
-  coral: '#FF6B6B', // Яркий коралловый
-  lime: '#A3E635', // Неоновый лайм
+  // Акцентные цвета - чистые Apple цвета
+  accent: '#FF9500', // Apple Orange
+  accentLight: '#FFCC00', // Apple Yellow
+  success: '#34C759', // Apple Green
+  warning: '#FF9500', // Apple Orange
+  teal: '#5AC8FA', // Apple Teal
+  purple: '#AF52DE', // Apple Purple
+  indigo: '#5856D6', // Apple Indigo
   
-  // Текст
+  // Текст - чистый белый
   textPrimary: '#FFFFFF',
-  textSecondary: 'rgba(255, 255, 255, 0.75)',
-  textTertiary: 'rgba(255, 255, 255, 0.5)',
-  textMuted: 'rgba(255, 255, 255, 0.3)',
+  textSecondary: 'rgba(255, 255, 255, 0.7)',
+  textTertiary: 'rgba(255, 255, 255, 0.45)',
+  textMuted: 'rgba(255, 255, 255, 0.25)',
   
-  // Фоны - глубокий тёмный с фиолетовым оттенком
-  background: '#0F0A1F', // Глубокий космический тёмный
-  backgroundElevated: '#1A1333',
-  backgroundSecondary: '#15102B',
-  backgroundTertiary: '#231A42',
-  cardBackground: 'rgba(139, 92, 246, 0.12)',
-  cardBackgroundLight: 'rgba(139, 92, 246, 0.18)',
-  cardBackgroundHover: 'rgba(139, 92, 246, 0.25)',
+  // Фоны - чистый тёмный Apple style
+  background: '#000000', // Pure black (OLED)
+  backgroundElevated: '#1C1C1E', // Apple elevated dark
+  backgroundSecondary: '#2C2C2E', // Apple secondary dark
+  backgroundTertiary: '#3A3A3C', // Apple tertiary dark
+  cardBackground: 'rgba(255, 255, 255, 0.08)',
+  cardBackgroundLight: 'rgba(255, 255, 255, 0.12)',
+  cardBackgroundHover: 'rgba(255, 255, 255, 0.18)',
   
-  // Glass effect - яркий
-  glass: 'rgba(139, 92, 246, 0.15)',
-  glassBorder: 'rgba(139, 92, 246, 0.3)',
+  // Glass effect - чистый
+  glass: 'rgba(255, 255, 255, 0.1)',
+  glassBorder: 'rgba(255, 255, 255, 0.2)',
   
-  // Границы - с фиолетовым оттенком
-  border: 'rgba(139, 92, 246, 0.2)',
-  borderLight: 'rgba(139, 92, 246, 0.35)',
-  separator: 'rgba(139, 92, 246, 0.15)',
+  // Границы - минималистичные
+  border: 'rgba(255, 255, 255, 0.15)',
+  borderLight: 'rgba(255, 255, 255, 0.25)',
+  separator: 'rgba(255, 255, 255, 0.1)',
   
   // Состояния
-  locked: 'rgba(255, 255, 255, 0.25)',
-  overlay: 'rgba(15, 10, 31, 0.85)',
-  overlayLight: 'rgba(15, 10, 31, 0.6)',
+  locked: 'rgba(255, 255, 255, 0.3)',
+  overlay: 'rgba(0, 0, 0, 0.75)',
+  overlayLight: 'rgba(0, 0, 0, 0.5)',
 };
 
 export const gradients = {
-  // Основной фон - глубокий космический
-  main: ['#0F0A1F', '#1A1333', '#0F0A1F'] as const,
+  // Основной фон - чистый чёрный
+  main: ['#000000', '#1C1C1E', '#000000'] as const,
   
-  // Премиум градиенты - ЯРКИЕ НЕОНОВЫЕ
-  premium: ['#8B5CF6', '#EC4899', '#F472B6'] as const,
-  premiumSubtle: ['rgba(139, 92, 246, 0.4)', 'rgba(236, 72, 153, 0.2)'] as const,
+  // Премиум градиенты - Apple style
+  premium: ['#007AFF', '#5856D6'] as const, // Blue to Indigo
+  premiumSubtle: ['rgba(0, 122, 255, 0.3)', 'rgba(88, 86, 214, 0.15)'] as const,
   
-  // Закатные яркие градиенты (тренд!)
-  sunset: ['#F472B6', '#FB923C', '#FACC15'] as const,
+  // Sunset - тёплые тона
+  sunset: ['#FF2D55', '#FF9500'] as const, // Pink to Orange
   
-  // Океанские яркие градиенты
-  ocean: ['#22D3EE', '#8B5CF6'] as const,
+  // Ocean - холодные тона
+  ocean: ['#5AC8FA', '#007AFF'] as const, // Teal to Blue
   
-  // Золотой для акцентов (премиум)
-  gold: ['#FACC15', '#FB923C'] as const,
+  // Золотой для премиума
+  gold: ['#FFCC00', '#FF9500'] as const, // Yellow to Orange
   
-  // Для медитаций - успокаивающие но яркие
-  calm: ['#8B5CF6', '#22D3EE'] as const,
-  calmSubtle: ['rgba(139, 92, 246, 0.3)', 'rgba(34, 211, 238, 0.15)'] as const,
+  // Calm - спокойные
+  calm: ['#5856D6', '#AF52DE'] as const, // Indigo to Purple
+  calmSubtle: ['rgba(88, 86, 214, 0.25)', 'rgba(175, 82, 222, 0.1)'] as const,
   
-  // Карточки - с неоновым свечением
-  card: ['rgba(139, 92, 246, 0.2)', 'rgba(236, 72, 153, 0.1)'] as const,
-  cardHover: ['rgba(139, 92, 246, 0.35)', 'rgba(236, 72, 153, 0.2)'] as const,
+  // Карточки
+  card: ['rgba(255, 255, 255, 0.1)', 'rgba(255, 255, 255, 0.05)'] as const,
+  cardHover: ['rgba(255, 255, 255, 0.15)', 'rgba(255, 255, 255, 0.08)'] as const,
   
-  // Кнопка CTA - яркий неоновый градиент
-  cta: ['#8B5CF6', '#EC4899'] as const,
-  ctaPressed: ['#7C3AED', '#DB2777'] as const,
+  // CTA кнопка - яркий Apple градиент
+  cta: ['#007AFF', '#5856D6'] as const,
+  ctaPressed: ['#0051D5', '#4240B0'] as const,
   
-  // AI секция - яркий контраст
-  ai: ['rgba(34, 211, 238, 0.25)', 'rgba(139, 92, 246, 0.15)'] as const,
+  // AI секция
+  ai: ['rgba(175, 82, 222, 0.2)', 'rgba(88, 86, 214, 0.1)'] as const,
   
-  // Дополнительные эффектные градиенты
-  neon: ['#22D3EE', '#8B5CF6', '#EC4899'] as const,
-  fire: ['#FB923C', '#F472B6', '#8B5CF6'] as const,
+  // Дополнительные
+  mint: ['#34C759', '#5AC8FA'] as const, // Green to Teal
+  fire: ['#FF9500', '#FF2D55'] as const, // Orange to Pink
 };
 
-// Тени - мягкие ЦВЕТНЫЕ (тренд 2025)
+// Тени - чистые, без цвета (Apple style)
 export const shadows = {
   small: {
-    shadowColor: '#8B5CF6',
+    shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.15,
+    shadowOpacity: 0.25,
     shadowRadius: 4,
     elevation: 2,
   },
   medium: {
-    shadowColor: '#8B5CF6',
+    shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.25,
-    shadowRadius: 12,
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
     elevation: 4,
   },
   large: {
-    shadowColor: '#8B5CF6',
+    shadowColor: '#000',
     shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.35,
-    shadowRadius: 20,
+    shadowOpacity: 0.4,
+    shadowRadius: 16,
     elevation: 8,
   },
   glow: {
-    shadowColor: '#8B5CF6',
+    shadowColor: '#007AFF',
     shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.5,
-    shadowRadius: 25,
+    shadowOpacity: 0.4,
+    shadowRadius: 20,
     elevation: 10,
   },
   glowPink: {
-    shadowColor: '#EC4899',
+    shadowColor: '#FF2D55',
     shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.4,
-    shadowRadius: 20,
+    shadowOpacity: 0.35,
+    shadowRadius: 16,
     elevation: 10,
   },
   glowCyan: {
-    shadowColor: '#22D3EE',
+    shadowColor: '#5AC8FA',
     shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.4,
-    shadowRadius: 20,
+    shadowOpacity: 0.35,
+    shadowRadius: 16,
     elevation: 10,
   },
 };

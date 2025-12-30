@@ -138,9 +138,9 @@ export const PaywallScreen: React.FC<{ navigation: any }> = ({ navigation }) => 
 
   return (
     <View style={styles.container}>
-      {/* Яркий глубокий космический фон */}
+      {/* Чистый тёмный Apple-style фон */}
       <LinearGradient 
-        colors={['#0F0A1F', '#1A1333', '#0F0A1F']} 
+        colors={['#000000', '#1C1C1E', '#000000']} 
         style={StyleSheet.absoluteFill}
         start={{ x: 0, y: 0 }}
         end={{ x: 0, y: 1 }}

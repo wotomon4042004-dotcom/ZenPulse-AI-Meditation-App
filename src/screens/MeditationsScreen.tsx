@@ -47,9 +47,9 @@ interface MoodConfig {
 }
 
 const moodConfigs: Record<Mood, MoodConfig> = {
-  happy: { icon: 'sunny', color: colors.accent, label: 'Радостно' },
-  neutral: { icon: 'partly-sunny', color: colors.teal, label: 'Нейтрально' },
-  sad: { icon: 'rainy', color: colors.secondary, label: 'Грустно' },
+  happy: { icon: 'sunny', color: '#FFCC00', label: 'Радостно' }, // Apple Yellow
+  neutral: { icon: 'partly-sunny', color: '#5AC8FA', label: 'Нейтрально' }, // Apple Teal
+  sad: { icon: 'rainy', color: '#AF52DE', label: 'Грустно' }, // Apple Purple
 };
 
 interface MeditationCardProps {
